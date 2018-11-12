@@ -7,3 +7,4 @@
 * logging json
   * [logging json with logback JsonLayout](https://github.com/hovermind/structured-logging/blob/master/logback-logging-json.md)
   * [logging json with logstash encoder](https://github.com/hovermind/structured-logging/blob/master/logback-logstash-logging-json.md)
+  * [logback logstash config example](https://github.com/hovermind/structured-logging/blob/master/logback-logstash-config.md)
