@@ -1,6 +1,8 @@
 ## Using logback for sping boot app
 * crete `logback-spring.xml` in resources folder of spring boot app
-* target a spring profile (i.e. papplication-dev.xml => `<springProfile name="dev">`)
+* target a spring profile (i.e. `papplication-dev.xml` => `<springProfile name="dev">`)
+
+**Note:** spring boot includes all dependency for logback (i.e. SLF4J, logback-core, logback-classic, jackson-databind etc). If you are not using spring boot you have specify these dependencies in `pom.xml`
 
 ## Logback configuration for spring boot
 `logback-spring.xml`
