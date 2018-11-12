@@ -1,6 +1,12 @@
 # TOC
-* [Dependencies](#)
+* [Dependencies](https://github.com/hovermind/structured-logging/blob/master/logback-logstash-logging-json.md#dependencies)
 * [Standards LoggingEvent Fields](https://github.com/logstash/logstash-logback-encoder#standard-fields)
+* [Customizing Standard Field Names](/logback-logstash-logging-json.md#customizing-standard-field-names)
+* [Ignoring fields](/logback-logstash-logging-json.md#ignoring-fields)
+* [Customizing Version](/logback-logstash-logging-json.md#customizing-version)
+* [Customizing Timestamp](/logback-logstash-logging-json.md#customizing-timestamp)
+* [Shortened FieldNames](/logback-logstash-logging-json.md#shortenedfieldnames)
+* [Composite Encoder/Layout](/logback-logstash-logging-json.md#composite-encoderlayout)
 
 ## Dependencies
 ```xml
