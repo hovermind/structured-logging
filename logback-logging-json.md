@@ -67,7 +67,7 @@
 </configuration>
 ```
 
-#### [MDC - Mapped Diagnostic Context](https://logback.qos.ch/manual/mdc.html)
+## [MDC - Mapped Diagnostic Context](https://logback.qos.ch/manual/mdc.html)
 MDC inserts key-value pair before log message
 ```java
 MDC.put("foo-key", "foo-value");
@@ -109,8 +109,8 @@ INFO -- FOO: "foo-value", MESSAGE: "foo message"
 **Note:** `PatternLayoutEncoder` is sub-class of `LayoutWrappingEncoder` and only allows `<pattern></pattern>` (`<layout></layout>` is not allowed)
 
 
-#### Custom JSON layout
-1. Extending JsonLayout
+## Custom JSON layout
+#### 1. Extending JsonLayout
 ```java
 public class FooJsonLayout extends JsonLayout {
 	
@@ -134,7 +134,7 @@ Log output
 }
 ```
 
-2. Using PatternLayoutEncoder
+#### 2. Using PatternLayoutEncoder
 ```xml
 <appender name="consoleAppenderCustomJson" class="ch.qos.logback.core.ConsoleAppender">
 	<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
@@ -173,7 +173,7 @@ Log output
 ## MDCInsertingServletFilter
 MDCInsertingServletFilter inserts hostname, request uri and user-agent etc. (associated with a given HTTP request) into the MDC
 
-##### Step - 1 : put at top of `web.xml`
+#### Step - 1 : put at top of `web.xml`
 ```xml
 <filter>
   <filter-name>MDCInsertingServletFilter</filter-name>
@@ -187,7 +187,7 @@ MDCInsertingServletFilter inserts hostname, request uri and user-agent etc. (ass
 </filter-mapping> 
 ```
 
-##### Step - 2 use [MDC keys](https://logback.qos.ch/manual/mdc.html#mis) in encoder
+#### Step - 2 use [MDC keys](https://logback.qos.ch/manual/mdc.html#mis) in encoder
 Using MDC key `req.requestURI` (`%X{req.requestURI}`)
 ```xml
 <appender name="requestJsonConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
